@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="a1">1111111</div>
+    <!-- jqueryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      const link = '<a href ="#">link</a>';
+
+      $("#a1").html(link);
+      $("#a1").text(link);
+      $("#a1").css("color", "#000");
+      $("#a1").css("background-color", "yellow");
+
+      //   $("#a1").hide();
+      $("#a1").fadeOut(1000).fadeIn(1000);
+
+      $("#a1").prepend("あいうえお");
+      $("#a1").append("さしすせそ");
+      $("#a1").prepend("ABC");
+
+      $("#a1").empty();
+    </script>
+  </body>
+</html>
